@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="p5.play.js"></script>
+    <script src="p5.sound.min.js"></script>
+  </head>
+  <body>
+      
+
+    <script >
+      var path ,pathImg;
+function preload(){
+  //pre-load images//
+pathImg=loadImage("path.png");
+}
+
+function setup(){
+  createCanvas(600,200);
+  //create sprites here//
+ var path = createSprite(100,200,20,20);
+ path.addImage(pathImg);
+}
+
+function draw() {
+  background("white");
+  drawSprites();
+}
+    </script>
+</body>
+</html>
